@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  
+
+
+  <title>My Admin</title>
+</head>
+<body >
+                <!--NAVBAR-->
+    <div class="row">
+        <nav>
+            <div class="nav-wrapper blue ">
+                <div class=" container">
+                     <a href="#!" class="brand-logo">My Admin</a>
+                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                     <ul class="right hide-on-med-and-down">
+                         <li><a href="../index.html">Dashboard</a></li>
+                         <li><a href="posts.html">Posts</a></li>
+                         <li><a href="categories.html">Categories</a></li>
+                         <li><a href="comments.html">Comments</a></li>
+                         <li><a href="users.html">Users</a></li>
+                     </ul>
+                </div> 
+            </div>
+          </nav>
+        </div>
+
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="posts.html">Post</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>        
+    </div>
+    
+    <main>
+
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title"><h4 class="flow-text">Users</h4></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Registered</th>
+                                </tr>
+                                <tr class="grey lighten-3">
+                                    <td class="info_use">
+                                        <img src="../images/profil1.png" width="40" height="40" alt="" class="circle responsive-img">
+                                        <p>Rachidatou Mamane</p>
+                                    </td>
+                                    <td>Rachida@gmail.com</td>
+                                    <td>Décembre 1, 2020</td>
+                                    <td>
+                                        <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_use">
+                                        <img src="../images/profil1.png" width="40" height="40" alt="" class="circle responsive-img">
+                                        <p>blaaz</p>
+                                    </td>
+                                    <td>blz@gmail.com</td>
+                                    <td>Décembre 2, 2020</td>
+                                    <td>
+                                        <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
+                                    </td>
+                                </tr>
+                                <tr class="grey lighten-3">
+                                    <td class="info_use">
+                                        <img src="../images/profil1.png" width="40" height="40" alt="" class="circle responsive-img">
+                                        <p>Az Taro</p>
+                                    </td>
+                                    <td>tary@gmail.com</td>
+                                    <td>Décembre 3, 2020</td>
+                                    <td>
+                                        <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_use">
+                                        <img src="../images/profil1.png" width="40" height="40" alt="" class="circle responsive-img">
+                                        <p>blackfish</p>
+                                    </td>
+                                    <td>bfish@gmail.com</td>
+                                    <td>Décembre 4, 2020</td>
+                                    <td>
+                                        <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        
+                                 <!-- PAGINATION  -->
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active blue lighten-1"><a href="#">1</a></li>
+                            <li class="waves-effect"><a href="#">2</a></li>
+                            <li class="waves-effect"><a href="#">3</a></li>
+                            <li class="waves-effect"><a href="#">4</a></li>
+                            <li class="waves-effect"><a href="#">5</a></li>
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+                            
+                      <!--FOOTER-->
+    <footer class="blue page-footer">
+		<div class=" blue footer-copyright">
+			<div class="container center-align">
+				My Admin &copy;inc 2020
+			</div>
+		</div>
+	</footer>
+
+                      <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                     crossorigin="anonymous"></script>
+    
+               <!-- javascript for materilize -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+   <script>
+    $(document).ready(function(){
+$('.sidenav').sidenav();
+});
+</script>
+
+
+</body>
+</html>
+
