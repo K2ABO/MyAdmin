@@ -19,27 +19,40 @@
         <nav>
             <div class="nav-wrapper blue ">
                <div class=" container">
-                  <a href="#!" class="brand-logo">My Admin</a>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                  <a href="../index.html" class="brand-logo">My Admin</a>
+                  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
                       <ul class="right hide-on-med-and-down">
                         <li><a href="index.html">Dashboard</a></li>
                         <li><a href="src/posts.html">Posts</a></li>
                         <li><a href="src/categories.html">Categories</a></li>
                         <li><a href="src/users.html">Comments</a></li>
                         <li><a href="src/users.html">Users</a></li>
+                      
                       </ul>
                         </div> 
             </div>
           </nav>
         </div>
+                   <!--SIDENAV-->
+        <ul class="sidenav" id="slide-out">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="../images/bckg.jpg">
+             </div>
+                 <a href="#"><img class="circle" src="../images/pic2.jpg"></a>
+                 <a href="#"><span class="white-text name">imran</span></a>
+                 <a href="#"><span class="white-text email">imkabo@gmail.com</span></a>
+        </div></li>
 
-                       <ul class="sidenav" id="mobile-demo">
-                         <li><a href="index.html">Dashboard</a></li>
-                         <li><a href="src/posts.html">Posts</a></li>
-                         <li><a href="src/categories.html">Categories</a></li>
-                         <li><a href="src/comments.html">Comments</a></li>
-                         <li><a href="src/users.html">Users</a></li>
-                       </ul>        
+          <li><a href="../index.html">Dashboard</a></li>
+          <li><a href="src/post.html">Post</a></li>
+          <li><a href="src/categories.html">Categories</a></li>
+          <li><a href="src/comments.html">Comments</a></li>
+          <li><a href="src/users.html">Users</a></li>
+          <hr>
+          <li><a href="#" class="disabled grey-text" >Account Controls</a></li>
+          <li><a href="#">Logout</a></li>
+</ul>        
     </div>
     
     <main>
@@ -47,7 +60,7 @@
       <section class="section">
 
         <div class="row">
-
+                            <!--SQUARE STATS-->
             <div class="col s12 m3">
                 <div class="card white-text  blue lighten-1">
                     <div class="card-content center-align">
@@ -105,11 +118,12 @@
     <section class="section blue lighten-4">
 
       <div class="row">
-
+                        <!--CHARTS-->
           <div class="col s12 m8">
             <canvas id="myChart" width="400" height="200"></canvas>
           </div>
          
+                      <!--COMMENTS-->
           <div class="col s12 m4">
               <ul class="collection with-header">
                   <li class="collection-header">
@@ -204,6 +218,8 @@
         </div>
     </div>
 </section>
+
+</main>
 
                     <!--BUTTON FIXED-->
 <div class=" redbtn ">
@@ -301,8 +317,6 @@
 </div>
 
 
-    </main>
-
             <!--FOOTER-->
     
     <footer class="blue page-footer">
@@ -327,7 +341,6 @@
     $('.sidenav').sidenav();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();
-    $('select').formSelect()
 });
 </script>
 <script>

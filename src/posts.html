@@ -19,9 +19,9 @@
         <nav>
             <div class="nav-wrapper blue ">
                         <div class=" container">
-                      <a href="#!" class="brand-logo">My Admin</a>
-                      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                      <ul class="right hide-on-med-and-down">
+                            <a href="../index.html" class="brand-logo">My Admin</a>
+                            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
+                                <ul class="right hide-on-med-and-down">
                         <li><a href="../index.html">Dashboard</a></li>
                         <li><a href="post.html">Post</a></li>
                         <li><a href="categories.html">Categories</a></li>
@@ -33,12 +33,26 @@
           </nav>
         </div>
 
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Post</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Comments</a></li>
-            <li><a href="#">Users</a></li>
+                         <!--SIDENAV-->
+
+          <ul class="sidenav" id="slide-out">
+            <li><div class="user-view">
+                <div class="background">
+                  <img src="../images/bckg.jpg">
+                 </div>
+                     <a href="#"><img class="circle" src="../images/pic2.jpg"></a>
+                     <a href="#"><span class="white-text name">imran</span></a>
+                     <a href="#"><span class="white-text email">imkabo@gmail.com</span></a>           
+            </div></li>
+
+            <li><a href="../index.html">Dashboard</a></li>
+                        <li><a href="post.html">Post</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="users.html">Users</a></li>
+            <hr>
+            <li><a href="#" class="disabled grey-text" >Account Controls</a></li>
+            <li><a href="#">Logout</a></li>
           </ul>        
     </div>
     
@@ -61,7 +75,7 @@
                                      <tr class="grey lighten-3">
                                          <td>Post One</td>
                                          <td>Web development</td>
-                                         <td>Oct 1, 2019</td>
+                                         <td>Déc 1, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
@@ -69,7 +83,7 @@
                                      <tr>
                                          <td>Post Two</td>
                                          <td>Graphic Design</td>
-                                         <td>Oct 2, 2019</td>
+                                         <td>Déc 2, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
@@ -77,7 +91,7 @@
                                      <tr class="grey lighten-3">
                                          <td>Post Three</td>
                                          <td>Web development</td>
-                                         <td>Oct 3, 2019</td>
+                                         <td>Déc 3, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
@@ -85,7 +99,7 @@
                                      <tr>
                                          <td>Post Four</td>
                                          <td>Tech Gadgets</td>
-                                         <td>Oct 4, 2019</td>
+                                         <td>Déc 4, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
@@ -93,7 +107,7 @@
                                      <tr class="grey lighten-3">
                                          <td>Post Five</td>
                                          <td>Graphic Design</td>
-                                         <td>Oct 5, 2019</td>
+                                         <td>Déc 5, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
@@ -101,16 +115,17 @@
                                      <tr>
                                          <td>Post Six</td>
                                          <td>Web development</td>
-                                         <td>Oct 6, 2019</td>
+                                         <td>Déc 6, 2020</td>
                                          <td>
                                              <a href="#" class="waves-effect waves-light btn blue lighten-1">DETAILS</a>
                                          </td>
                                      </tr>
                                  </thead>
                              </table>
-                             <!-- PAGES-->
+
+                             <!-- PAGINATION-->
                              <ul class="pagination">
-                                 <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                 <li class="desactivate"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                                  <li class="active blue lighten-1"><a href="#">1</a></li>
                                  <li class="waves-effect"><a href="#">2</a></li>
                                  <li class="waves-effect"><a href="#">3</a></li>
@@ -126,10 +141,104 @@
             </div>
          </section>
 
-
-
-
     </main>
+
+             <!--BUTTON FIXED-->
+<div class=" redbtn ">
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large waves-effect waves-light red">
+         <i class="material-icons">add</i> 
+      </a>
+     <ul>
+       <li><a href="#edit" class="btn-floating blue modal-trigger"><i class="material-icons">mode_edit</i></a>
+       </li>
+       <li><a href="#catego_modal" class="btn-floating blue modal-trigger"><i
+                   class="material-icons">folder</i></a></li>
+       <li><a href="#user_modal" class="btn-floating blue modal-trigger"><i
+                   class="material-icons">people</i></a></li>
+ 
+     </ul>
+   </div>
+ </div>
+
+  <!--MODALS-->
+<div id="edit" class="modal">
+    <div class="modal-content">
+        <h4>Add Post</h4>
+        <div class="row">
+            <div class="input-field">
+                <input id="name" type="text" class="validate">
+                <label for="name">Title</label>
+            </div>
+        </div>
+        <div class="input-field">
+            <select>
+                <option value="" disabled selected>Select option</option>
+                <option value="1">Web Developper</option>
+                <option value="2">Designer</option>
+                <option value="3">Game Developper</option>
+            </select>
+            <label>Category</label>
+        </div>
+        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+    </div>
+    <div class="modal-footer">
+        <a class="waves-effect waves-light blue btn" style="margin: 0 20px 40px 0;">SUBMIT</a>
+    </div>
+  </div>
+ 
+  <!--  CATEGORY MODALS  -->
+<div id="catego_modal" class="modal">
+    <div class="modal-content">
+        <h4>Add Category</h4>
+        <div class="row">
+            <div class="input-field">
+                <input id="name_title" type="text" class="validate">
+                <label for="name_title">Title</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="waves-effect waves-light blue btn" style="margin: 0 20px 40px 0;">SUBMIT</a>
+    </div>
+  </div>
+  
+               <!--  USERS MODALS  ===-->
+  <div id="user_modal" class="modal">
+    <div class="modal-content">
+        <h4>Add User</h4>
+        <div class="row">
+            <div class="input-field">
+                <input id="use_name" type="text" class="validate">
+                <label for="use_name">Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="use_email" type="email" class="validate">
+                <label for="use_email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="use_pass" type="password" class="validate">
+                <label for="use_pass">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="use_pass2" type="password" class="validate">
+                <label for="use_pass2">Confirm password</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="waves-effect waves-light blue btn" style="margin: 0 20px 40px 0;">SUBMIT</a>
+    </div>
+  </div>
+  </div>
+
+                        <!--FOOTER-->
     
     <footer class="blue page-footer">
 		<div class=" blue footer-copyright">
@@ -149,6 +258,8 @@
    <script>
     $(document).ready(function(){
 $('.sidenav').sidenav();
+$('.fixed-action-btn').floatingActionButton();
+$('.modal').modal();
 });
 </script>
 
